@@ -1,0 +1,149 @@
+/*Código armado por La Foca Loca S.A. No modificar*/
+body {
+  font-family: Arial, sans-serif;
+  width: 940px;
+  margin: 5% auto;
+  min-height: 100%;
+  background-image: url(../images/lineas.png);
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 2, 5), 0 12px 30px 0 rgba(0, 0, 0, 0.13);
+}
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+li {
+  padding: 5px 0;
+  color: white;
+}
+li::before {
+  content: "• ";
+  color: #EC6778;
+}
+
+h1{
+  background-color: #EC6778;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+h2{
+  color: #EC6778;
+}
+
+hr{
+  width: 80%;
+  background: #221e24;
+}
+
+ul .liSize{
+  font-size: 15px;
+}
+
+.col-40, .col-60 {
+  display: table-cell;
+  margin: 0;
+  vertical-align: top;
+}
+.col-40 {
+  background: #191c3c;
+  padding: 30px;
+  color: #000;
+}
+
+.bloque img{
+  width: 100%;
+  box-sizing: border-box;
+  border: 1.5px solid;
+}
+
+.input{
+  border-color: #ec6778;
+  border-radius: 10px;
+  width: 20%;
+  border-style: solid;
+  text-align: center;
+  font-weight: bold;
+  background-color: #191c3c;
+  color: white;
+}
+
+.boton{
+  padding: 5px 10px 5px 10px;
+  color: #EC6778;
+  font-weight: bold;
+  background-color: white;
+  border: 2px solid;
+  width: 35%;
+  border-radius: 5px;
+}
+
+.boton:hover{
+  padding: 5px 10px 5px 10px;
+  color: white;
+  font-weight: bold;
+  background-color: #EC6778;
+  border: 2px solid white;
+  width: 35%;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.textCenter{
+  text-align: center;
+}
+
+.outlineNone{
+  outline: none;
+}
+
+#juego{
+  background-color: black;
+  height: 600px;
+  width: 600px;
+}
+
+#juego div {
+  text-align: center;
+  animation: fadein 2s;
+  width: 33.33%;
+  height: 33.33%;
+  float: left;
+}
+
+#footer p{
+  background-color: #221e24;
+  margin-top: auto;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-style: italic;
+  font-size: 18px;
+}
+
+#submit{
+  width: 60%;
+  height: 45%;
+  border-radius: 20px;
+  border: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  outline: none;
+  margin-top: 20px;
+  margin-left: 20%;
+  font-family: monospace;
+  font-size: 17px;
+  color: #221e24;
+}
+
+#submit:hover{
+  background: #fff;
+  box-shadow: 0 0 0 3px #58b66d;
+}
+
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

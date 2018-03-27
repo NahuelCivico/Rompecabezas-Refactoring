@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BMO Arcade</title>
+    <link rel="stylesheet" href="css/juego.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="js/sweetalert/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/sweetalert/sweetalert.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+  </head>
+  <body>
+    <div class="col-40">
+      <div id="titulo">
+        <h1> Rompecabezas </h1>
+      </div>
+
+      <div id="instrucciones">
+        <h2>Seleccionar</h2>
+        <ul>
+          <li>Cantidad de piezas por lado: <input id="cantidadPiezasPorLado" class="input outlineNone" value="3" type="text" maxlength="1"></li>
+          <li class="liSize">
+              Nivel:  <input type="radio" name="nivel" class="radio" id="easy" checked> Fácil
+                      <input type="radio" name="nivel" class="radio" id="medium"> Intermedio
+                      <input type="radio" name="nivel" class="radio" id="hard"> Dificíl
+          </li>
+        </ul>
+
+        <h2> Instrucciones </h2>
+        <ul>
+          <li> Mover las piezas presionando las teclas de flechas o el mouse. </li>
+          <li> Encontrar el orden correcto de las piezas. </li>
+        </ul>
+      </div>
+        <hr>
+      <h2>MOVIMIENTOS RESTANTES</h2>
+      <h2 id="count"></h2>
+      <div class="textCenter">
+        <input type="button" class="boton outlineNone" value="Mezclar" onclick="Juego.mezclarPiezas(75)">
+      </div>
+    </div>
+
+    <div class="col-60">
+      <div id="juego">
+        <canvas id="canvas" width="600" height="600"></canvas>
+      </div>
+    </div>
+
+    <div id="footer">
+        <p> Autor: Nahuel Civico, desarrollador web full stack. </p>
+    </div>
+
+    <script src="js/juego.js"></script>
+
+  </body>
+</html>
